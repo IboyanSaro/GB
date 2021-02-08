@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Form Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginFormController" customModule="LessonUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oja-GE-kC7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client VK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZC-7g-rQf">
+                                        <rect key="frame" x="132" y="40" width="150" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="JCY-uX-USN"/>
+                                            <constraint firstAttribute="height" constant="40" id="y17-Ce-Prj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwS-53-GPT">
+                                        <rect key="frame" x="142" y="130" width="130" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="cD4-De-apW"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="sto-hw-f9a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kzT-tP-1EI">
+                                        <rect key="frame" x="132" y="210" width="150" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="6Wc-I9-EWX"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="dzv-dP-s2U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNe-hg-wo9">
+                                        <rect key="frame" x="142" y="295" width="130" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="Hpg-6r-LRB"/>
+                                            <constraint firstAttribute="height" constant="40" id="dvd-Gh-Lq4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L7f-sL-JkU">
+                                        <rect key="frame" x="132" y="375" width="150" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Cq8-yg-bEo"/>
+                                            <constraint firstAttribute="height" constant="35" id="UaJ-dY-P8g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDL-33-5pL">
+                                        <rect key="frame" x="142" y="460" width="130" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Xh6-9u-yDA"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="cjB-O2-raI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="30"/>
+                                        <state key="normal" title="LOG IN"/>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X0N-Hy-KxH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CZC-7g-rQf" firstAttribute="top" secondItem="oja-GE-kC7" secondAttribute="top" constant="40" id="1c8-Ym-Lok"/>
+                                    <constraint firstItem="ZwS-53-GPT" firstAttribute="top" secondItem="CZC-7g-rQf" secondAttribute="bottom" constant="50" id="2Ih-QP-RMO"/>
+                                    <constraint firstItem="ZwS-53-GPT" firstAttribute="centerX" secondItem="oja-GE-kC7" secondAttribute="centerX" id="8ah-2A-yga"/>
+                                    <constraint firstItem="kzT-tP-1EI" firstAttribute="leading" relation="lessThanOrEqual" secondItem="oja-GE-kC7" secondAttribute="leading" constant="132" id="9Jn-Ow-y5k"/>
+                                    <constraint firstItem="kzT-tP-1EI" firstAttribute="top" secondItem="ZwS-53-GPT" secondAttribute="bottom" constant="40" id="AlM-j0-ufk"/>
+                                    <constraint firstItem="L7f-sL-JkU" firstAttribute="leading" relation="lessThanOrEqual" secondItem="oja-GE-kC7" secondAttribute="leading" constant="132" id="C6W-Jb-HtB"/>
+                                    <constraint firstAttribute="trailing" secondItem="bDL-33-5pL" secondAttribute="trailing" constant="142" id="LMq-Fx-RqE"/>
+                                    <constraint firstItem="kzT-tP-1EI" firstAttribute="centerX" secondItem="oja-GE-kC7" secondAttribute="centerX" id="PnN-MZ-5PJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="bDL-33-5pL" secondAttribute="bottom" constant="30" id="Qkq-Fb-hIT"/>
+                                    <constraint firstItem="CZC-7g-rQf" firstAttribute="centerX" secondItem="oja-GE-kC7" secondAttribute="centerX" id="RMW-5K-oYe"/>
+                                    <constraint firstItem="iNe-hg-wo9" firstAttribute="centerX" secondItem="oja-GE-kC7" secondAttribute="centerX" id="USc-48-x7F"/>
+                                    <constraint firstItem="iNe-hg-wo9" firstAttribute="top" secondItem="kzT-tP-1EI" secondAttribute="bottom" constant="50" id="bfO-fe-DMY"/>
+                                    <constraint firstItem="bDL-33-5pL" firstAttribute="top" secondItem="L7f-sL-JkU" secondAttribute="bottom" constant="50" id="bhf-8J-bVR"/>
+                                    <constraint firstItem="L7f-sL-JkU" firstAttribute="centerX" secondItem="oja-GE-kC7" secondAttribute="centerX" id="gZd-Tr-oqj"/>
+                                    <constraint firstItem="bDL-33-5pL" firstAttribute="centerX" secondItem="oja-GE-kC7" secondAttribute="centerX" id="lQR-Du-4AM"/>
+                                    <constraint firstItem="L7f-sL-JkU" firstAttribute="top" secondItem="iNe-hg-wo9" secondAttribute="bottom" constant="40" id="tLP-Ch-PMY"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Dkh-AG-Sx2"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Qbd-N0-Oz9"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XQX-Jd-Mv6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oja-GE-kC7" firstAttribute="top" secondItem="XQX-Jd-Mv6" secondAttribute="top" id="XQo-PF-mvA"/>
+                            <constraint firstItem="oja-GE-kC7" firstAttribute="leading" secondItem="XQX-Jd-Mv6" secondAttribute="leading" id="Yq2-NZ-jU7"/>
+                            <constraint firstItem="XQX-Jd-Mv6" firstAttribute="bottom" secondItem="oja-GE-kC7" secondAttribute="bottom" id="ez5-6J-NWo"/>
+                            <constraint firstItem="XQX-Jd-Mv6" firstAttribute="trailing" secondItem="oja-GE-kC7" secondAttribute="trailing" id="f1e-VX-z9G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginInput" destination="kzT-tP-1EI" id="gyk-a7-Pnl"/>
+                        <outlet property="passwordInput" destination="L7f-sL-JkU" id="WPt-RW-yA9"/>
+                        <outlet property="scrollView" destination="oja-GE-kC7" id="3cn-DP-A3E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
